@@ -45,7 +45,7 @@ header {
 }
 
 .text-secondary {
-  color: $seconday-color;
+  color: $secondary-color;
 }
 
 main {
@@ -60,7 +60,7 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: $seconday-color;
+        color: $secondary-color;
         @include easeOut();
       }
     }
@@ -88,7 +88,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $seconday-color 3px solid;
+    border: $secondary-color 3px solid;
   }
 
   .bio {
@@ -111,7 +111,7 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $seconday-color 5px solid;
+    border-bottom: $secondary-color 5px solid;
   }
 }
 
@@ -127,8 +127,35 @@ main {
 
     &:hover {
       opacity: 0.5;
-      border-color: $seconday-color;
+      border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+}
+
+//Contact
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: #fff 2px solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+
+      span {
+        color: set-text-color($secondary-color);
+      }
     }
   }
 }
@@ -141,7 +168,7 @@ main {
   margin-bottom: 0.3rem;
 
   &:hover {
-    background: $seconday-color;
+    background: $secondary-color;
     color: set-text-color($primary-color);
   }
 }

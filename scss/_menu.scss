@@ -86,7 +86,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px $seconday-color;
+      border: solid 3px $secondary-color;
     }
   }
 
@@ -99,7 +99,7 @@
     }
 
     &.current > a {
-      color: $seconday-color;
+      color: $secondary-color;
     }
   }
 
@@ -115,7 +115,7 @@
     @include easeOut;
 
     &:hover {
-      color: $seconday-color;
+      color: $secondary-color;
     }
   }
 }
