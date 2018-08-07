@@ -9,6 +9,7 @@
   "author": "Jake Buccarelli",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.9.2",
+    "typed.js": "^2.0.9"
   }
 }
