@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -43,10 +44,13 @@
     <h1 class="lg-heading">Jake
       <span class="text-secondary">Buccarelli</span>
     </h1>
-    <h2 class="sm-heading">Software Developer, UX Designer & Professional Nerd</h2>
-    <div class="main-buttons">
-      <a href="#" class="main-btn-link">Who am I?</a>
-      <a href="#" class="main-btn-link">Let's chat!</a>
+    <h2 id="element" class="sm-heading"></h2>
+
+    <div id="typed">
+      <h2 class="sm-heading">Web Developer, Software Enthusiast, & Professional Nerd.
+        <br />Looking to start a new project?
+        <span class="text-secondary">Let's talk.</span>
+      </h2>
     </div>
     <div class="icons">
       <a href="https://www.linkedin.com/in/jake-buccarelli-53b747b1/">
@@ -55,9 +59,20 @@
       <a href="https://github.com/jtb1137">
         <i class="fab fa-github fa-2x"></i>
       </a>
+      <a href="mailto: jtb1137@gmail.com">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
     </div>
   </main>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script>
+    var typed = new Typed('#element', {
+      stringsElement: '#typed',
+      typeSpeed: 30
+    });
+  </script>
+
 </body>
 
 </html>
