@@ -44,7 +44,10 @@
     <h1 class="lg-heading">My
       <span class="text-secondary">Work</span>
     </h1>
-    <h2 class="sm-heading">Check out some of the things I've been working on!</h2>
+    <h3 id="element"></h3>
+    <div id="typed">
+      <h3 class="sm-heading">Check out some of my projects!</h3>
+    </div>
     <div class="projects">
       <div class="item">
         <a href="#!">
@@ -105,9 +108,15 @@
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
-  </footer>
+    &copy; Jake Buccarelli 2018 </footer>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script>
+    var typed = new Typed('#element', {
+      stringsElement: '#typed',
+      typeSpeed: 30
+    });
+  </script>
 </body>
 
 </html>
