@@ -224,6 +224,10 @@ main {
       .boxes div:hover span {
         color: #2d2d2d; }
 
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
