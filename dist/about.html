@@ -45,23 +45,35 @@
       <span class="text-secondary">Me</span>
     </h1>
     <div class="about-info">
-      <img src="img/portrait.jpg" alt="jake buccarelli" class="bio-image">
+      <img src="img/portrait.jpg" height="auto" width="214" alt="jake buccarelli" class="bio-image">
       <div class="bio">
-        <h3 class="text-secondary">Who am I?</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet animi maxime debitis velit, voluptate hic facilis
-          sequi adipisci vel sed facere accusamus provident laudantium dolorem omnis. Nam, eveniet non! Culpa.</p>
+        <h3 id="element" class="text-secondary"></h3>
+        <div id="typed">
+          <h3 class="text-secondary">Who am I?</h3>
+        </div>
+        <p>My name is Jake Buccarelli. I build websites and full-stack applications. A northern New Jersey native, I now call
+          Philadelphia my home. Following my graduation from Penn State in 2016, I began my professional life in pharmaceutical
+          advertising. However, as a lifelong techie, I made a drastic shift in my career path. I decided to learn how to
+          code.
+        </p>
+        <p>A year later, I'm working freelance as a Web Developer, doing what I love, in an industry that rewards passion, curiosity,
+          and creativity. I'm learning something new every day, and I can't wait to see what new people, projects, and technologies
+          I'm introduced to as I continue on in my programming career.
+
+        </p>
       </div>
       <div class="job job-1">
         <i class="fas fa-graduation-cap fa-2x"></i>
         <h3>The Pennsylvania State University</h3>
-        <h6>Web Developer</h6>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel alias ea repellendus delectus debitis nemo unde porro,
-          iusto a iste reprehenderit expedita eveniet rerum nobis.</p>
+        <h6>September 2012 - May 2016</h6>
+        <p>- Major in Economics</p>
+        <p>- Minor in Business and the Liberal Arts</p>
+        <p>- Sergeant-at-Arms of Delta Sigma Phi</p>
       </div>
       <div class="job job-2">
         <i class="fas fa-laptop-code fa-2x"></i>
         <h3>The Flatiron School</h3>
-        <h6>Web Developer</h6>
+        <h6>Full-Stack Web Developer Program</h6>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel alias ea repellendus delectus debitis nemo unde porro,
           iusto a iste reprehenderit expedita eveniet rerum nobis.</p>
       </div>
@@ -76,9 +88,16 @@
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
+    &copy; Jake Buccarelli 2018
   </footer>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script>
+    var typed = new Typed('#element', {
+      stringsElement: '#typed',
+      typeSpeed: 30
+    });
+  </script>
 </body>
 
 </html>

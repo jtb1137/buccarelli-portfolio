@@ -44,7 +44,10 @@
     <h1 class="lg-heading">Contact
       <span class="text-secondary">Me</span>
     </h1>
-    <h2 class="sm-heading">Let's talk!</h2>
+    <h2 id="element"></h2>
+    <div id="typed">
+      <h2 class="sm-heading">Let's talk!</h2>
+    </div>
     <div class="boxes">
       <div>
         <span class="text-secondary">
@@ -68,9 +71,15 @@
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
-  </footer>
+    &copy; Jake Buccarelli 2018 </footer>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script>
+    var typed = new Typed('#element', {
+      stringsElement: '#typed',
+      typeSpeed: 30
+    });
+  </script>
 </body>
 
 </html>
