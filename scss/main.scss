@@ -165,6 +165,10 @@ main {
     margin-bottom: 3rem;
     @include easeOut;
 
+    a {
+      color: #000;
+    }
+
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
